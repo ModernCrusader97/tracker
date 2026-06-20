@@ -61,6 +61,18 @@ func main() {
 		})
 	}
 
+	// APK download
+	apkPath := os.Getenv("APK_PATH")
+	if apkPath == "" {
+		apkPath = filepath.Join("..", "tracker-web", "android", "app", "build", "outputs", "apk", "debug", "app-debug.apk")
+	}
+	if _, err := os.Stat(apkPath); err == nil {
+		r.GET("/download/tracker.apk", func(c *gin.Context) {
+			c.Header("Content-Disposition", "attachment; filename=tracker.apk")
+			c.File(apkPath)
+		})
+	}
+
 	port := os.Getenv("SERVER_PORT")
 	if port == "" {
 		port = "8082"

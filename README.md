@@ -2,6 +2,8 @@
 
 🌐 **Live Demo:** https://tracker.lazzy.chat
 
+📱 **Android APK:** https://tracker.lazzy.chat/download/tracker.apk
+
 AI 코딩 툴(Claude Code)을 활용해 개발한 1인 풀스택 프로젝트입니다.
 
 ---
