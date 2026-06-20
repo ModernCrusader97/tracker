@@ -1,5 +1,7 @@
 # Tracker - 개인 일정 & 습관 트래커
 
+🌐 **Live Demo:** https://tracker.lazzy.chat
+
 AI 코딩 툴(Claude Code)을 활용해 개발한 1인 풀스택 프로젝트입니다.
 
 ---
